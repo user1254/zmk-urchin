@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: caksoylar
-      revision: mods+battery-perc
+      revision: battery-widget-percentage
       import: app/west.yml
   self:
     path: config
