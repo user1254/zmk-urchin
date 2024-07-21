@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 #include "keymap_italian.h"
 
 // Layer definitions
@@ -120,9 +121,9 @@
 		varies_layer {
 			label = "Varies";
 			bindings = <
-			&none       &none       &none       &kp IT_CEGR &none                      &none &kp C_BRI_UP &kp C_BRI_DN &none &none 
+			&none       &none       &none       &kp IT_CEGR &none                      &none &kp C_BRI_UP &kp C_BRI_DN &none      &none 
 			&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU                &none &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &none
-			&kp IT_DEG  &kp IT_EUR  &kp IT_PND  &kp IT_UGRV &none                      &none &none &none &none &none
+			&kp IT_DEG  &kp IT_EUR  &kp IT_PND  &kp IT_UGRV &none                      &none &mkp LCLK    &none        &mkp LCLK  &none
 									&none &none          &none &none 
 			>;
 		};
