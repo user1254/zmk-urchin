@@ -15,7 +15,7 @@
 #define NAV 1
 #define SYM 2
 #define FNC 3
-#define ACCENT_SYM2 4
+#define VARIES 4
 #define BLUETOOTH 5
 // -----------------
 
@@ -80,10 +80,10 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp B &kp L &kp D &kp C &kp V          			&kp Z &kp Y &kp O   &kp U   &kp COMMA
-			&kp N &kp R &kp T &kp S &kp G          			&kp P &kp H &kp A   &kp E    &kp I
-			&kp Q &kp X &kp M &kp W &kp J          			&kp K &kp F &kp SQT &kp SEMI &kp DOT
-						&mo NAV  &kp LSHIFT	&kp SPACE  &mo SYM
+			&kp B &kp L &kp D &kp C &kp V          				&kp Z &kp Y &kp O   &kp U   &kp COMMA
+			&kp N &kp R &kp T &kp S &kp G          				&kp P &kp H &kp A   &kp E    &kp I
+			&kp Q &kp X &kp M &kp W &kp J          				&kp K &kp F &kp SQT &kp SEMI &kp DOT
+						&mo NAV  &kp LSHIFT          &kp SPACE  &mo SYM
 			>;
 		};
 
@@ -103,7 +103,7 @@
 			&kp ESC   &kp LBKT &kp LBRC  &kp LPAR  &kp LS(GRAVE)			&kp CARET  &kp RPAR   &kp RBRC &kp RBKT  &kp GRAVE
 			&kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DLLR  			&kp HASH   &kp RSHIFT &kp RALT &kp RCTRL &kp RCMD
 			&kp PLUS  &kp PIPE &kp AT    &kp FSLH  &kp PRCNT			&none      &kp BSLH   &kp AMPS &kp QMARK &kp EXCL
-								&mo FNC  &mo SYM2	&trans &trans
+							       &mo FNC  &mo VARIES      &trans &trans
 			>;
 		};
 
@@ -117,11 +117,11 @@
 			>;
 		};
 
-		accent_sym2_layer {
-			label = "Acc/Sym2";
+		varies_layer {
+			label = "Varies";
 			bindings = <
-			&none       &none       &none       &kp IT_CEGR &none                      &none &none &none &none &none 
-			&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU                &none &none &none &none &none
+			&none       &none       &none       &kp IT_CEGR &none                      &none &C_BRI_UP &C_BRI_DN &none &none 
+			&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU                &none &C_VOL_UP &C_VOL_DN &C_MUTE &none
 			&kp IT_DEG  &kp IT_EUR  &kp IT_PND  &kp IT_UGRV &none                      &none &none &none &none &none
 									&none &none          &none &none 
 			>;
