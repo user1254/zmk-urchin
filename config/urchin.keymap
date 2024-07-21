@@ -90,7 +90,7 @@
 		nav_layer {
 			label = "Mods";
 			bindings = <
-			&CAPS     &kp BSPC  &kp LC(BSPC) &kp LS(TAB) &kp TAB  				&kp LC(LS(T))  &kp HOME  &kp UP   &kp END   &kp DEL
+			&kp CAPS     &kp BSPC  &kp LC(BSPC) &kp LS(TAB) &kp TAB  			&kp LC(LS(T))  &kp HOME  &kp UP   &kp END   &kp DEL
 			&sk LCMD  &sk LCTRL &sk LALT     &sk LSHIFT  &none				&kp LC(T)      &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
 			&kp LC(Z) &kp LC(X) &kp LC(C)    &kp LC(V)   &kp LC(Y)      			&kp LC(W)      &kp PG_UP &none  &kp PG_DN &none
 								     &trans &mo BLUETOOTH    &kp ENTER  &mo FNC
