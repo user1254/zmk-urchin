@@ -93,8 +93,8 @@
 		nav_layer {
 			label = "Nav.";
 			bindings = <
-			&kp CAPS  &none     &none     &kp LS(TAB) &kp TAB  			     &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp LC(BSPC)
-			&sk LCMD  &sk LCTRL &sk LALT  &sk LSHIFT  &none				     &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp BSPC
+			&kp CAPS  &none     &none     &kp LS(TAB) &kp TAB  			     &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
+			&sk LCMD  &sk LCTRL &sk LALT  &sk LSHIFT  &none				     &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
 			&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)   &kp LC(Y)      		     &kp LC(W)     &kp PG_UP &none    &kp PG_DN &kp DEL
 								  &trans &mo BLUETOOTH    &kp ENTER  &mo FNC
 			>;
@@ -103,7 +103,7 @@
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&kp ESC   &kp LBKT &kp LBRC &kp LPAR  &kp LS(GRAVE)			&kp CARET &kp RPAR   &kp RBRC &kp RBKT  &kp GRAVE
+			&kp ESC   &kp LBKT &kp LBRC &kp LPAR  &kp GRAVE				&kp CARET &kp RPAR   &kp RBRC &kp RBKT  &kp BSPC
 			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp STAR  			&kp HASH  &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
 			&kp PLUS  &kp DLLR &kp PIPE &kp FSLH  &kp PRCNT				&kp AT    &kp BSLH   &kp AMPS &kp QMARK &kp EXCL
 							       &mo FNC  &mo VARIES      &trans &trans
