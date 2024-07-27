@@ -23,6 +23,8 @@
 &sk {
 	// don't release mods on other mods presses
 	ignore-modifiers;
+	release-after-ms = <3000>;
+	quick-release;
 };
 
 
@@ -102,7 +104,7 @@
 			label = "Sym.";
 			bindings = <
 			&kp ESC   &kp LBKT &kp LBRC &kp LPAR  &kp LS(GRAVE)			&kp CARET &kp RPAR   &kp RBRC &kp RBKT  &kp GRAVE
-			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp STAR  			&kp HASH  &kp RSHIFT &kp RALT &kp RCTRL &kp RCMD
+			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp STAR  			&kp HASH  &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
 			&kp PLUS  &kp DLLR &kp PIPE &kp FSLH  &kp PRCNT				&kp AT    &kp BSLH   &kp AMPS &kp QMARK &kp EXCL
 							       &mo FNC  &mo VARIES      &trans &trans
 			>;
