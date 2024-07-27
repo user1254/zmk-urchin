@@ -93,7 +93,7 @@
 		nav_layer {
 			label = "Nav.";
 			bindings = <
-			&kp CAPS  &none     &none     &kp LS(TAB) &kp TAB  			     &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
+			&kp CAPS  &none     &none     &kp TAB &kp LS(TAB)  			     &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
 			&sk LCMD  &sk LCTRL &sk LALT  &sk LSHIFT  &none				     &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
 			&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)   &kp LC(Y)      		     &kp LC(W)     &kp PG_UP &none    &kp PG_DN &kp DEL
 								  &trans &mo BLUETOOTH    &kp ENTER  &mo FNC
@@ -123,7 +123,7 @@
 		varies_layer {
 			label = "Varies";
 			bindings = <
-			&none &none      &kp C_BRI_UP &kp C_BRI_DN &none		&none &none     &none     &none     &none 
+			&none &none      &kp C_BRI_DN &kp C_BRI_UP &none		&none &none     &none     &none     &none 
 			&none &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none		&none &mkp LCLK &kp K_APP &mkp RCLK &none
 			&none &none      &none        &none        &none		&none &none     &none     &none     &none
 								&none &none          &none &none 
