@@ -105,7 +105,7 @@
 			bindings = <
 			&kp ESC   &kp LBRC &kp LBKT &kp LPAR  &kp GRAVE				&kp CARET &kp RPAR   &kp RBKT &kp RBRC  &kp BSPC
 			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp STAR  			&kp HASH  &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
-			&kp PLUS  &kp DLLR &kp PIPE &kp FSLH  &kp PRCNT				&kp AT    &kp BSLH   &kp AMPS &kp QMARK &kp EXCL
+			&kp PLUS  &kp DLLR &kp PIPE &kp FSLH  &kp PRCNT				&kp AT    &kp QMARK  &kp EXCL &kp AMPS  &kp BSLH
 							       &mo FNC  &mo VARIES      &trans &trans
 			>;
 		};
@@ -123,7 +123,7 @@
 		varies_layer {
 			label = "Varies";
 			bindings = <
-			&none &none      &kp C_BRI_DN &kp C_BRI_UP &none		&none &none     &none     &none     &none 
+			&none &kp PSCRN  &kp C_BRI_DN &kp C_BRI_UP &none		&none &none     &none     &none     &none
 			&none &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none		&none &mkp LCLK &kp K_APP &mkp RCLK &none
 			&none &none      &none        &none        &none		&none &none     &none     &none     &none
 								&none &none          &none &none 
