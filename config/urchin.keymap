@@ -93,8 +93,8 @@
 		nav_layer {
 			label = "Nav.";
 			bindings = <
-			&kp CAPS  &kp LS(TAB)   &kp TAB   &kp ENTER   &none  			     	 &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
-			&sk LCMD  &sk LCTRL 	&sk LALT  &sk LSHIFT  &none 				     &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
+			&kp CAPS  &kp LS(TAB)   &none     &kp ENTER   &none  			     	 &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
+			&sk LCMD  &sk LCTRL 	&sk LALT  &sk LSHIFT  &kp TAB 				     &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
 			&kp LC(Z) &kp LC(X) 	&kp LC(C) &kp LC(V)   &kp LC(Y)      		     &kp LC(W)     &kp PG_UP &none    &kp PG_DN &kp DEL
 								  &trans &mo BLUETOOTH    &trans  &mo FNC
 			>;
