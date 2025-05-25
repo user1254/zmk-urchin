@@ -1,5 +1,11 @@
 Firmware for: [Urchin Keyboard](https://github.com/duckyb/urchin)
 
+
+## How to flash urchin
+1. Connect to usb
+2. Double tap on reset button to mount the keyboard
+3. Move the correct half on the mounted keyboard
+
 ## Getting started
 
 **Are you trying to make your own ZMK firmware?**  
