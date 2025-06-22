@@ -46,6 +46,21 @@
 			quick-tap-ms = <200>;
 			bindings = <&kp>, <&kp>;
 		};
+
+		NAV_OR_RESET: nav_or_reset {
+		    compatible = "zmk,behavior-tap-dance";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <250>;
+		    bindings = <&mo NAV>, <&sk CLEAR>;
+		};
+		SYM_OR_RESET: sym_or_reset {
+		    compatible = "zmk,behavior-tap-dance";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <250>;
+		    bindings = <&mo NAV>, <&sk CLEAR>;
+		};
+	};
+
 	};
 
 	macros {
@@ -90,7 +105,7 @@
 			&kp B &kp L &kp D &kp C &kp V          				&kp Z &kp Y &kp O   &kp U     &kp SEMI
 			&kp N &kp R &kp T &kp S &kp G          				&kp P &kp H &kp A   &kp E     &kp I
 			&kp Q &kp X &kp M &kp W &kp J          				&kp K &kp F &kp SQT &kp COMMA &kp DOT
-						&mo NAV  &kp LSHIFT          &kp SPACE  &mo SYM
+						&NAV_OR_RESET  &kp LSHIFT          &kp SPACE  &SYM_OR_RESET
 			>;
 		};
 
@@ -118,8 +133,8 @@
 			label = "Fun/Num";
 			bindings = <
 			&kp N7   &kp N5    &kp N3   &kp N1     &kp N9			&kp N8  &kp N0     &kp N2   &kp N4    &kp N6 
-			&sk LCMD &sk LCTRL &sk LALT &sk LSHIFT &kp F11			&kp F10 &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
-			&kp F7   &kp F5    &kp F3   &kp F1     &kp F9			&kp F8  &kp F12    &kp F2   &kp F4    &kp F6
+			&sk LCMD &sk LCTRL &sk LALT &sk LSHIFT &kp F11			&kp F12 &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
+			&kp F7   &kp F5    &kp F3   &kp F1     &kp F9			&kp F8  &kp F10    &kp F2   &kp F4    &kp F6
 							  	&none &none        &none &none
 			>;
 		};
