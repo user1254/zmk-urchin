@@ -59,7 +59,6 @@
 		    tapping-term-ms = <250>;
 		    bindings = <&mo NAV>, <&sk CLEAR>;
 		};
-	};
 
 	};
 
