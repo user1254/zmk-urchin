@@ -51,13 +51,13 @@
 		    compatible = "zmk,behavior-tap-dance";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <250>;
-		    bindings = <&mo NAV>, <&sk CLEAR>;
+		    bindings = <&mo NAV>, <&sk_cancel>;
 		};
 		SYM_OR_RESET: sym_or_reset {
 		    compatible = "zmk,behavior-tap-dance";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <250>;
-		    bindings = <&mo SYM>, <&sk CLEAR>;
+		    bindings = <&mo SYM>, <&sk_cancel>;
 		};
 
 	};
@@ -111,20 +111,20 @@
 		nav_layer {
 			label = "Nav.";
 			bindings = <
-			&kp ESC   &kp CAPS	&kp ENTER	&none	    &kp LS(TAB)  		&kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
-			&sk LCMD  &sk LCTRL 	&sk LALT  	&sk LSHIFT  &kp TAB 			&kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
-			&kp LC(Z) &kp LC(X) 	&kp LC(C) 	&kp LC(V)   &kp LC(Y)			&kp LC(W)     &kp PG_UP &none    &kp PG_DN &kp DEL
-								  	&trans &mo BLUETOOTH    &trans  &mo FNC
+			&kp ESC   &kp LS(TAB)   &kp ENTER	&kp LS(ENTER)	&none        		    &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
+			&kp LCMD  &sk LCTRL 	&sk LALT  	&sk LSHIFT      &kp TAB                 &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(W)
+			&kp LC(Z) &kp LC(X) 	&kp LC(C) 	&kp LC(V)       &kp LC(Y)               &kp LC(W)     &kp PG_UP &kp CAPS &kp PG_DN &kp DEL
+								  	                &trans &mo BLUETOOTH            &trans  &mo FNC
 			>;
 		};
 		
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&kp GRAVE &kp LBRC &kp LBKT &kp LPAR  &none				&kp CARET &kp RPAR   &kp RBKT &kp RBRC  &kp BSPC
+			&kp GRAVE &kp LBRC &kp LBKT &kp LPAR  &none				    &kp CARET &kp RPAR   &kp RBKT &kp RBRC  &kp BSPC
 			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp HASH  			&kp STAR  &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
 			&kp PLUS  &kp DLLR &kp BSLH &kp FSLH  &kp PRCNT				&kp AT    &kp QMARK  &kp EXCL &kp AMPS  &kp DEL
-							       &mo FNC  &mo VARIES      &trans &trans
+							                    &mo FNC  &mo VARIES      &trans &trans
 			>;
 		};
 
@@ -134,17 +134,17 @@
 			&kp N7   &kp N5    &kp N3   &kp N1     &kp N9			&kp N8  &kp N0     &kp N2   &kp N4    &kp N6 
 			&sk LCMD &sk LCTRL &sk LALT &sk LSHIFT &kp F11			&kp F12 &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
 			&kp F7   &kp F5    &kp F3   &kp F1     &kp F9			&kp F8  &kp F10    &kp F2   &kp F4    &kp F6
-							  	&none &none        &none &none
+							  	                &none &none        &none &none
 			>;
 		};
 
 		varies_layer {
 			label = "Varies";
 			bindings = <
-			&none &kp PSCRN  &kp C_BRI_DN &kp C_BRI_UP &none		&none &mmv MOVE_LEFT	&none		&mmv MOVE_RIGHT	&none
+			&none &kp LC(PSCRN)  &kp C_BRI_DN &kp C_BRI_UP &none		&none &mmv MOVE_LEFT	&none		&mmv MOVE_RIGHT	&none
 			&none &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none		&none &mkp LCLK		&kp K_APP	&mkp RCLK	&none
 			&none &none      &none        &none        &none		&none &mmv MOVE_UP	&none		&mmv MOVE_DOWN	&none
-								&none &none          &none &none 
+								                &none &none          &none &none 
 			>;
 		};
 
