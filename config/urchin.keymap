@@ -112,7 +112,7 @@
 			label = "Nav.";
 			bindings = <
 			&kp ESC   &kp LS(TAB)   &kp ENTER	&kp LS(ENTER)	&none        		    &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
-			&kp LCMD  &sk LCTRL 	&sk LALT  	&sk LSHIFT      &kp TAB           &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
+			&sk LCMD  &sk LCTRL 	&sk LALT  	&sk LSHIFT      &kp TAB           &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
 			&kp LC(Z) &kp LC(X) 	&kp LC(C) 	&kp LC(V)       &kp LC(Y)         &kp LC(W)     &kp PG_UP &kp CAPS &kp PG_DN &kp DEL
 								  	                &trans &mo BLUETOOTH            &trans  &mo FNC
 			>;
@@ -122,7 +122,7 @@
 			label = "Sym.";
 			bindings = <
 			&kp GRAVE &kp LBRC &kp LBKT &kp LPAR  &none				    &kp CARET &kp RPAR   &kp RBKT &kp RBRC  &kp BSPC
-			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp HASH  			&kp STAR  &sk RSHIFT &sk RALT &sk RCTRL &sk RCMD
+			&kp MINUS &kp LT   &kp GT   &kp EQUAL &kp HASH  			&kp STAR  &sk RSHIFT &sk RALT &sk RCTRL &kp RCMD
 			&kp PLUS  &kp DLLR &kp BSLH &kp FSLH  &kp PRCNT				&kp AT    &kp QMARK  &kp EXCL &kp AMPS  &kp DEL
 							                    &mo FNC  &mo VARIES      &trans &trans
 			>;
