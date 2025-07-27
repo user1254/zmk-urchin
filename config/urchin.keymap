@@ -51,13 +51,13 @@
 		    compatible = "zmk,behavior-tap-dance";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <250>;
-		    bindings = <&mo NAV>, <&sk_cancel>;
+		    bindings = <&mo NAV>, <&to 0>;
 		};
 		SYM_OR_RESET: sym_or_reset {
 		    compatible = "zmk,behavior-tap-dance";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <250>;
-		    bindings = <&mo SYM>, <&sk_cancel>;
+		    bindings = <&mo SYM>, <&to 0>;
 		};
 
 	};
