@@ -112,8 +112,8 @@
 			label = "Nav.";
 			bindings = <
 			&kp ESC   &kp LS(TAB)   &kp ENTER	&kp LS(ENTER)	&none        		    &kp LC(LS(T)) &kp HOME  &kp UP   &kp END   &kp BSPC
-			&kp LCMD  &sk LCTRL 	&sk LALT  	&sk LSHIFT      &kp TAB                 &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(W)
-			&kp LC(Z) &kp LC(X) 	&kp LC(C) 	&kp LC(V)       &kp LC(Y)               &kp LC(W)     &kp PG_UP &kp CAPS &kp PG_DN &kp DEL
+			&kp LCMD  &sk LCTRL 	&sk LALT  	&sk LSHIFT      &kp TAB           &kp LC(T)     &kp LEFT  &kp DOWN &kp RIGHT &kp LC(BSPC)
+			&kp LC(Z) &kp LC(X) 	&kp LC(C) 	&kp LC(V)       &kp LC(Y)         &kp LC(W)     &kp PG_UP &kp CAPS &kp PG_DN &kp DEL
 								  	                &trans &mo BLUETOOTH            &trans  &mo FNC
 			>;
 		};
